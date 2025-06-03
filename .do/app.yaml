@@ -1,0 +1,11 @@
+name: hass
+services:
+- name: hass
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: slushie/casa.hass
+  dockerfile_path: Dockerfile
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: apps-s-1vcpu-0.5gb
